@@ -35,6 +35,8 @@
 
 DS1307RTC::DS1307RTC()
 {
+  Wire.setSDA(20);
+  Wire.setSCL(21);
   Wire.begin();
 }
   
